@@ -1,0 +1,19 @@
+<form action="/items" method="post">
+  <label for="name">Item name: </label>
+  <input type="text" id="name" name="name">
+  <label for="price">Item price: </label>
+  <input type="text" id="price" name="price">
+  <label for="weight">Item weight: </label>
+  <input type="text" id="weight" name="weight">
+  <label for="manufacturer">Item manufacturer: </label>
+  <input type="text" id="manufacturer" name="manufacturer">
+
+  <label for="purchased">Do you own this?</label>
+  <input type="checkbox" data-val="true" data-val-required="The purchased field is required." id="purchased" name="purchased" value="true">
+  <input name="purchased" type="hidden" value="false">
+
+  <label for="packed">Have you packed this yet?</label>
+  <input type="checkbox" data-val="true" data-val-required="The packed field is required." id="packed" name="packed" value="true">
+  <input name="packed" type="hidden" value="false">
+  <button type="submit">Submit</button>
+</form>

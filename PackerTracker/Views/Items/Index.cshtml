@@ -1,0 +1,8 @@
+@using PackerTracker.Models
+<h1>Your list of stuff to buy</h1>
+<ul>
+@foreach(Item i in Model)
+{
+<li>@i.Name</li>
+}
+</ul>
